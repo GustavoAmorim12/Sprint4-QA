@@ -89,21 +89,25 @@ Find Mottu - API Tests/
 ├── Login/
 │ ├── POST Login
 │ └── POST Validate Token
+│
 ├── Usuários/
 │ ├── POST Criar Usuário
 │ ├── GET Consultar Usuário
 │ ├── PUT Atualizar Usuário
 │ └── DELETE Remover Usuário
+│
 ├── Motos/
 │ ├── POST Criar Moto
 │ ├── GET Consultar Moto
 │ ├── PUT Atualizar Moto
 │ └── DELETE Remover Moto
+│
 ├── Filiais/
 │ ├── POST Criar Filial
 │ ├── GET Consultar Filial
 │ ├── PUT Atualizar Filial
 │ └── DELETE Remover Filial
+│
 └── Localizações/
 ├── POST Criar Localização
 ├── GET Consultar Localização
