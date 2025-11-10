@@ -195,9 +195,9 @@ Evidências exportáveis (.json / .html reports)
 
 🎥 Links Importantes
 
-📽️ Apresentação do Projeto: YouTube
+📽️ Apresentação do Projeto: https://www.youtube.com/watch?v=MUVSWwGTqc8
 
-💻 Azure DevOps: Challenge QA
+💻 Azure DevOps: https://dev.azure.com/RM5553350737/Challange%20QA
 
 🧠 Conclusão
 
