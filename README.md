@@ -166,8 +166,10 @@ Body:
 ✅ Automação via Newman (CI/CD-ready)
 ✅ Evidências exportáveis (JSON / HTML reports)
 
-🎥 Youtube
+🎥 Links
+
 Apresentação do projeto no Youtube: https://youtu.be/MUVSWwGTqc8
+Azure DevOps: https://dev.azure.com/RM5553350737/Challange%20QA
 
 🧠 Conclusão
 
