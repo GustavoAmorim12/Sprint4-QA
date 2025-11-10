@@ -117,12 +117,14 @@ Find Mottu - API Tests/
 
 ---
 
-## 🧪 Exemplos de Testes (Postman)
+🧪 Teste de API – Find Mottu (Postman / Newman)
+👤 Criação de Usuário
 
-### 👤 **POST /usuarios**
+Endpoint:
+POST /usuarios
 
-**Body:**
-```json
+Body:
+
 {
   "primeiroNome": "Gustavo",
   "sobrenome": "Amorim",
@@ -132,7 +134,8 @@ Find Mottu - API Tests/
   "idFilial": 10
 }
 
-Test Script:
+
+Test Script (Postman):
 
 pm.test("Status 201 - Usuário criado com sucesso", () => {
     pm.response.to.have.status(201);
@@ -144,8 +147,11 @@ pm.test("Response contém ID do usuário", () => {
     pm.environment.set("usuarioId", json.id);
 });
 
+🔒 Login
 
-🔒 POST /login
+Endpoint:
+POST /login
+
 Body:
 
 {
@@ -153,7 +159,8 @@ Body:
   "senha": "123456"
 }
 
-Test Script:
+
+Test Script (Postman):
 
 pm.test("Status 200 - Login efetuado", () => {
     pm.response.to.have.status(200);
@@ -162,7 +169,10 @@ pm.test("Status 200 - Login efetuado", () => {
 const token = pm.response.json().token;
 pm.environment.set("token", token);
 
-🏍️ POST /motos
+🏍️ Cadastro de Moto
+
+Endpoint:
+POST /motos
 
 Body:
 
@@ -181,28 +191,31 @@ Body:
 
 ✅ Boas Práticas de QA Aplicadas
 
-Scripts Postman reutilizáveis com variáveis de ambiente
+📦 Scripts Postman reutilizáveis com variáveis de ambiente
 
-Testes independentes e idempotentes
+🔁 Testes independentes e idempotentes
 
-Armazenamento automático de IDs (motoId, usuarioId, etc.)
+💾 Armazenamento automático de IDs (motoId, usuarioId, etc.)
 
-Validação da estrutura JSON em todas as respostas
+🧩 Validação da estrutura JSON em todas as respostas
 
-Automação via Newman (pronto para CI/CD)
+⚙️ Automação via Newman (pronto para CI/CD)
 
-Evidências exportáveis (.json / .html reports)
+📑 Evidências exportáveis (.json / .html reports)
 
 🎥 Links Importantes
 
-📽️ Apresentação do Projeto: https://www.youtube.com/watch?v=MUVSWwGTqc8
+📽️ Apresentação do Projeto:
+[https://www.youtube.com/watch?v=MUVSWwGTqc8](url)
 
-💻 Azure DevOps: https://dev.azure.com/RM5553350737/Challange%20QA
+💻 Azure DevOps:
+[https://dev.azure.com/RM5553350737/Challange%20QA](url)
 
 🧠 Conclusão
 
 O processo de QA do Find Mottu assegura a confiabilidade, segurança e estabilidade de todos os endpoints da aplicação.
-Com testes de API automatizados e validados via Postman + JWT, o sistema garante:
+
+Com testes automatizados de API validados via Postman + JWT, o sistema garante:
 
 🔍 Controle completo de cadastro e rastreamento de motos
 
